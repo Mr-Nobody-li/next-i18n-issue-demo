@@ -5,6 +5,7 @@
  * @LastEditTime: 2023-09
  * @Description: layout
  */
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

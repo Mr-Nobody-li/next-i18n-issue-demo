@@ -5,12 +5,13 @@
  * @LastEditTime: 2023-09
  * @Description: 顶部导航栏
  */
-"use client";
+
 import Image from "next/image";
 import { Tabs } from "antd";
 import type { TabsProps } from "antd";
 import Link from "next/link";
 import style from "./header.module.css";
+import { useI18n } from "@/locales/client";
 
 const items: TabsProps["items"] = [
   {
@@ -36,8 +37,10 @@ const onChange = (key: string) => {
 };
 
 function Header() {
+  const t = useI18n();
   return (
     <div className="text-red-500">
+      <p>{t("hello")}</p>
       <Image src="/images/logo.png" width={100} height={30} alt="" />
       <Tabs
         className={style.tab}
