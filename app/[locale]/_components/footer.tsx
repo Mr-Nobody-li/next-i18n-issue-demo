@@ -6,9 +6,9 @@
  * @Description: footer
  */
 import Image from 'next/image'
+import Link from 'next/link'
 import platformInfo from '@/app/[locale]/guanwang-ch'
 import { useI18n } from '@/locales/client'
-import Link from 'next/link'
 
 export default function Footer({ locale }: { locale: string }) {
   const t = useI18n()
