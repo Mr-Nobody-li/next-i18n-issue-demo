@@ -16,8 +16,6 @@ function ComponentName(props: Props) {
   const t = useI18n();
   return (
     <div>
-      <p>{t("hello")}</p>
-      fesfes
       <Header></Header>
     </div>
   );

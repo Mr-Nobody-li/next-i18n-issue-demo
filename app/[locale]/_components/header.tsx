@@ -13,34 +13,32 @@ import Link from "next/link";
 import style from "./header.module.css";
 import { useI18n } from "@/locales/client";
 
-const items: TabsProps["items"] = [
-  {
-    key: "产品中心",
-    label: <Link href="/products">产品中心</Link>,
-  },
-  {
-    key: "服务支持",
-    label: <Link href="/serviceSupports">服务支持</Link>,
-  },
-  {
-    key: "解决方案",
-    label: <Link href="/solutions">解决方案</Link>,
-  },
-  {
-    key: "关于我们",
-    label: <Link href="/aboutUs">关于我们</Link>,
-  },
-];
-
 const onChange = (key: string) => {
   console.log(key);
 };
 
 function Header() {
   const t = useI18n();
+  const items: TabsProps["items"] = [
+    {
+      key: "产品中心",
+      label: <Link href="/products">{t("chanPinZhongXin")}</Link>,
+    },
+    {
+      key: "服务支持",
+      label: <Link href="/serviceSupports">{t("fuWuZhiChi")}</Link>,
+    },
+    {
+      key: "解决方案",
+      label: <Link href="/solutions">{t("jieJueFangAn")}</Link>,
+    },
+    {
+      key: "关于我们",
+      label: <Link href="/aboutUs">{t("guanYuWoMen")}</Link>,
+    },
+  ];
   return (
     <div className="text-red-500">
-      <p>{t("hello")}</p>
       <Image src="/images/logo.png" width={100} height={30} alt="" />
       <Tabs
         className={style.tab}
