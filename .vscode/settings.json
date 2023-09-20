@@ -14,5 +14,10 @@
     "dateFormat": "YYYY-MM" // 输出：2019-05 该功能将影响所有时间字段
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "tailwindCSS.rootFontSize": 14
+  "tailwindCSS.rootFontSize": 14,
+
+  // i18n-ally
+  "i18n-ally.localesPaths": ["locales"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.displayLanguage": "zh-CN"
 }
