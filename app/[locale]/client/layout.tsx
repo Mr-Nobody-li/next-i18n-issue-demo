@@ -12,12 +12,18 @@ import { I18nProviderClient } from "@/locales/client";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 
-export default function SubLayout({ children }: { children: ReactElement }) {
+export default function SubLayout({
+  children,
+  params,
+}: {
+  children: ReactElement;
+  params: { locale: string };
+}) {
   return (
     <I18nProviderClient>
       <Header></Header>
       {children}
-      <Footer></Footer>
+      <Footer locale={params.locale}></Footer>
     </I18nProviderClient>
   );
 }

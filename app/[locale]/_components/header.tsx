@@ -22,19 +22,35 @@ function Header() {
   const items: TabsProps["items"] = [
     {
       key: "产品中心",
-      label: <Link href="/products">{t("chanPinZhongXin")}</Link>,
+      label: (
+        <Link className="text-black" href="/products">
+          {t("chanPinZhongXin")}
+        </Link>
+      ),
     },
     {
       key: "服务支持",
-      label: <Link href="/serviceSupports">{t("fuWuZhiChi")}</Link>,
+      label: (
+        <Link className="text-black" href="/serviceSupports">
+          {t("fuWuZhiChi")}
+        </Link>
+      ),
     },
     {
       key: "解决方案",
-      label: <Link href="/solutions">{t("jieJueFangAn")}</Link>,
+      label: (
+        <Link className="text-black" href="/solutions">
+          {t("jieJueFangAn")}
+        </Link>
+      ),
     },
     {
       key: "关于我们",
-      label: <Link href="/aboutUs">{t("guanYuWoMen")}</Link>,
+      label: (
+        <Link className="text-black" href="/aboutUs">
+          {t("guanYuWoMen")}
+        </Link>
+      ),
     },
   ];
   return (
