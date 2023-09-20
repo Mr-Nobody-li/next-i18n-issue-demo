@@ -5,10 +5,10 @@
  * @LastEditTime: 2023-09
  * @Description: footer
  */
-import Link from 'next/link'
 import Image from 'next/image'
 import platformInfo from '@/app/[locale]/guanwang-ch'
 import { useI18n } from '@/locales/client'
+import Link from 'next/link'
 
 export default function Footer({ locale }: { locale: string }) {
   const t = useI18n()
@@ -17,7 +17,7 @@ export default function Footer({ locale }: { locale: string }) {
 
   return (
     <footer className="mx-auto max-w-[1920px] bg-[#2f4566] px-6">
-      <div className="grid grid-cols-1 gap-8 border border-white py-12 text-white transition-colors duration-150 md:grid-cols-7">
+      <div className="grid  grid-cols-1 gap-8 border border-white py-12 text-white transition-colors duration-150 md:grid-cols-7">
         {/* 公司介绍 */}
         <div className="col-span-1 md:col-span-2">
           <div className="h-[50px]">

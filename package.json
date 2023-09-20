@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3100",
+    "dev": "next dev -p 3100 -H 0.0.0.0",
     "build": "next build",
     "start": "next start -p 3200",
     "lint": "next lint"
@@ -17,6 +17,8 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "next": "13.4.19",
     "next-international": "^1.0.1",
     "postcss": "8.4.28",

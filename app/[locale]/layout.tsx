@@ -6,17 +6,18 @@
  * @Description: layout
  */
 
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import StyledComponentsRegistry from "@/lib/AntdRegistry";
+import React from 'react'
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import StyledComponentsRegistry from '@/lib/AntdRegistry'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "君同智能",
-  description: "君同智能",
-};
+  title: '君同智能',
+  description: '君同智能',
+}
 
 export default function RootLayout({
   children,
@@ -29,5 +30,5 @@ export default function RootLayout({
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
-  );
+  )
 }

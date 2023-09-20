@@ -5,21 +5,20 @@
  * @LastEditTime: 2023-09
  * @Description:
  */
-"use client";
+'use client'
 
-import { useI18n } from "@/locales/client";
-
-import CarouselComponent from "../_components/Carousel";
+import CarouselComponent from '../_components/Carousel'
+import { useI18n } from '@/locales/client'
 
 interface Props {}
 
 function ComponentName(props: Props) {
-  const t = useI18n();
+  const t = useI18n()
   return (
     <div>
       <CarouselComponent></CarouselComponent>
     </div>
-  );
+  )
 }
 
-export default ComponentName;
+export default ComponentName

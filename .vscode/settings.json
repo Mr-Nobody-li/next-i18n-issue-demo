@@ -13,7 +13,11 @@
     "autoAdd": true, // 检测文件没有头部注释，自动添加文件头部注释
     "dateFormat": "YYYY-MM" // 输出：2019-05 该功能将影响所有时间字段
   },
+
+  // "prettier.enable": false,
+
   "typescript.tsdk": "node_modules/typescript/lib",
+
   "tailwindCSS.rootFontSize": 14,
 
   // i18n-ally

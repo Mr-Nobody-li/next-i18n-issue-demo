@@ -5,14 +5,14 @@
  * @LastEditTime: 2023-09
  * @Description:
  */
-import type { ThemeConfig } from "antd";
+import type { ThemeConfig } from 'antd'
 
 const theme: ThemeConfig = {
   token: {
     fontSize: 14,
-    colorPrimary: "#2576c3",
-    fontFamily: "inherit",
+    colorPrimary: '#2576c3',
+    fontFamily: 'inherit',
   },
-};
+}
 
-export default theme;
+export default theme

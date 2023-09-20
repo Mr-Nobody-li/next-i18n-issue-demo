@@ -6,65 +6,60 @@
  * @Description: 顶部导航栏
  */
 
-import Image from "next/image";
-import { Tabs } from "antd";
-import type { TabsProps } from "antd";
-import Link from "next/link";
-import style from "./header.module.css";
-import { useI18n } from "@/locales/client";
-
-const onChange = (key: string) => {
-  console.log(key);
-};
+import Image from 'next/image'
+import { Tabs } from 'antd'
+import type { TabsProps } from 'antd'
+import Link from 'next/link'
+import style from './header.module.css'
+import { useI18n } from '@/locales/client'
 
 function Header() {
-  const t = useI18n();
-  const items: TabsProps["items"] = [
+  const t = useI18n()
+  const items: TabsProps['items'] = [
     {
-      key: "产品中心",
+      key: '产品中心',
       label: (
         <Link className="text-black" href="/products">
-          {t("chanPinZhongXin")}
+          {t('chanPinZhongXin')}
         </Link>
       ),
     },
     {
-      key: "服务支持",
+      key: '服务支持',
       label: (
         <Link className="text-black" href="/serviceSupports">
-          {t("fuWuZhiChi")}
+          {t('fuWuZhiChi')}
         </Link>
       ),
     },
     {
-      key: "解决方案",
+      key: '解决方案',
       label: (
         <Link className="text-black" href="/solutions">
-          {t("jieJueFangAn")}
+          {t('jieJueFangAn')}
         </Link>
       ),
     },
     {
-      key: "关于我们",
+      key: '关于我们',
       label: (
         <Link className="text-black" href="/aboutUs">
-          {t("guanYuWoMen")}
+          {t('guanYuWoMen')}
         </Link>
       ),
     },
-  ];
+  ]
   return (
-    <div className="text-red-500 flex justify-between">
+    <div className="flex justify-between text-red-500">
       <Image src="/images/logo.png" width={100} height={30} alt="" />
       <Tabs
         className={style.tab}
         activeKey="1"
         items={items}
-        onChange={onChange}
       />
       <div></div>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header
