@@ -8,6 +8,14 @@ a {
   cursor: pointer;
 }
 
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

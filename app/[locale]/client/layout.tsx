@@ -9,7 +9,15 @@
 
 import { ReactElement } from "react";
 import { I18nProviderClient } from "@/locales/client";
+import Header from "../_components/header";
+import Footer from "../_components/footer";
 
 export default function SubLayout({ children }: { children: ReactElement }) {
-  return <I18nProviderClient>{children}</I18nProviderClient>;
+  return (
+    <I18nProviderClient>
+      <Header></Header>
+      {children}
+      <Footer></Footer>
+    </I18nProviderClient>
+  );
 }

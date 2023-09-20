@@ -38,7 +38,7 @@ function Header() {
     },
   ];
   return (
-    <div className="text-red-500">
+    <div className="text-red-500 flex justify-between">
       <Image src="/images/logo.png" width={100} height={30} alt="" />
       <Tabs
         className={style.tab}
@@ -46,6 +46,7 @@ function Header() {
         items={items}
         onChange={onChange}
       />
+      <div></div>
     </div>
   );
 }

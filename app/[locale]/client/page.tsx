@@ -8,7 +8,8 @@
 "use client";
 
 import { useI18n } from "@/locales/client";
-import Header from "../_components/header";
+
+import CarouselComponent from "../_components/Carousel";
 
 interface Props {}
 
@@ -16,7 +17,7 @@ function ComponentName(props: Props) {
   const t = useI18n();
   return (
     <div>
-      <Header></Header>
+      <CarouselComponent></CarouselComponent>
     </div>
   );
 }

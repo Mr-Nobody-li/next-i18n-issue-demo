@@ -16,6 +16,19 @@ const platformInfo = {
       },
     ],
   },
+  // 首页轮播图
+  Carousel: [
+    {
+      backgroundImage: "https://xxx.jpg",
+      desc: "xxx",
+      title: "xxx",
+    },
+    {
+      backgroundImage: "https://xxx.jpg",
+      desc: "xxx",
+      title: "xxx",
+    },
+  ],
   // 产品列表
   products: [
     {
