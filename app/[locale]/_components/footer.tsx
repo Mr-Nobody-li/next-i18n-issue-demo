@@ -16,8 +16,8 @@ export default function Footer({ locale }: { locale: string }) {
   const { products, companyInfo } = platformInfo
 
   return (
-    <footer className="mx-auto max-w-[1920px] bg-[#2f4566] px-6">
-      <div className="grid  grid-cols-1 gap-8 border border-white py-12 text-white transition-colors duration-150 md:grid-cols-7">
+    <footer className="mx-auto max-w-[1920px] bg-[#2f4566] px-[20px] pb-[50px] md:px-[160px]">
+      <div className="grid grid-cols-1 gap-8 border-b border-solid border-white py-[30px] text-white transition-colors duration-150 md:grid-cols-7">
         {/* 公司介绍 */}
         <div className="col-span-1 md:col-span-2">
           <div className="h-[50px]">
@@ -34,7 +34,7 @@ export default function Footer({ locale }: { locale: string }) {
             </Link>
           </div>
 
-          <ul className="flex flex-initial flex-col md:flex-1">
+          <ul className="flex flex-initial flex-col text-gray-300 md:flex-1">
             <li className="py-3 md:py-0 md:pb-4">{companyInfo.name}</li>
             <li className="py-3 md:py-0 md:pb-4">
               {t('diZhi')}：{companyInfo.address}
@@ -65,7 +65,7 @@ export default function Footer({ locale }: { locale: string }) {
                 <li className="py-3 md:py-0 md:pb-4" key={index}>
                   <Link
                     href={`/${locale}/products/${item.name}`}
-                    className="text-white hover:text-blue-400"
+                    className="text-gray-300 hover:text-blue-400"
                   >
                     {item.name}
                   </Link>
@@ -92,7 +92,7 @@ export default function Footer({ locale }: { locale: string }) {
                 <li className="py-3 md:py-0 md:pb-4" key={index}>
                   <Link
                     href={`/${locale}/products/${item.name}`}
-                    className="text-white hover:text-blue-400"
+                    className="text-gray-300 hover:text-blue-400"
                   >
                     {item.name}
                   </Link>
