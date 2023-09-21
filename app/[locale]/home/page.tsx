@@ -3,11 +3,10 @@
  * @Date: 2023-09
  * @LastEditors: Mr-Nobody-li
  * @LastEditTime: 2023-09
- * @Description:
+ * @Description: 首页
  */
 'use client'
-
-import CarouselComponent from '../_components/Carousel'
+import CarouselComponent from './_components/Carousel'
 import { useI18n } from '@/locales/client'
 
 interface Props {}

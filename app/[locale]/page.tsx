@@ -5,6 +5,7 @@
  * @LastEditTime: 2023-09
  * @Description: locales page
  */
+
 import React from 'react'
 import { ConfigProvider } from 'antd'
 import theme from '@/theme/themeConfig'
