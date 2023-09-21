@@ -16,8 +16,8 @@ export default function Footer({ locale }: { locale: string }) {
   const { products, companyInfo } = platformInfo
 
   return (
-    <footer className="mx-auto max-w-[1920px] bg-[#2f4566] px-[20px] pb-[50px] md:px-[160px]">
-      <div className="grid grid-cols-1 gap-8 border-b border-solid border-white py-[30px] text-white transition-colors duration-150 md:grid-cols-7">
+    <footer className="bg-[#2f4566] pb-[50px]">
+      <div className="mx-auto grid w-[90%] grid-cols-1 gap-8 border-b border-solid border-white  py-[30px] text-white transition-colors duration-150 md:grid-cols-7 xl:max-w-[1140px]">
         {/* 公司介绍 */}
         <div className="col-span-1 md:col-span-2">
           <div className="h-[50px]">

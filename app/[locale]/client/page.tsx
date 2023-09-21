@@ -17,6 +17,10 @@ function ComponentName(props: Props) {
   return (
     <div>
       <CarouselComponent></CarouselComponent>
+
+      <div className="mx-auto h-[600px] w-[90%] bg-pink-50 xl:max-w-[1140px]">
+        fesfes
+      </div>
     </div>
   )
 }
