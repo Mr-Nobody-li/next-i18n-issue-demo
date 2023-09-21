@@ -7,14 +7,21 @@
  */
 
 import { createI18nMiddleware } from 'next-international/middleware'
-import { NextRequest } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
+
+const locales = ['en', 'zh']
 
 const I18nMiddleware = createI18nMiddleware({
-  locales: ['en', 'zh'],
+  locales,
   defaultLocale: 'zh',
 })
 
 export function middleware(request: NextRequest) {
+  locales.forEach((locale) => {
+    if (request.nextUrl.pathname.startsWith(`/${locale}`)) {
+      return NextResponse.rewrite(new URL(`/${locale}/home`, request.url))
+    }
+  })
   return I18nMiddleware(request)
 }
 
